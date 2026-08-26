@@ -14,9 +14,12 @@ export const mockResearchResults = [
     date: "2011-07-20",
     source_url: "https://indiankanoon.org/doc/1718047/",
     relevance_score: 0.92,
-    passages: [
+    proposition_support: "Strong support",
+    authority_status: "Verified",
+    why_it_matters: "Directly addresses the separability of the arbitration agreement from the underlying contract, holding that termination does not ipso facto terminate the arbitration agreement.",
+    supporting_passages: [
       {
-        paragraph_id: "SC_ARB_001_p12",
+        paragraph_id: "12",
         text: "The arbitration agreement is an independent agreement between the parties... even if the main agreement is terminated, the arbitration agreement will survive for resolution of disputes arising under or in connection with the main agreement.",
         score: 0.95
       }
@@ -36,9 +39,12 @@ export const mockResearchResults = [
     date: "2019-04-10",
     source_url: "https://indiankanoon.org/doc/1234567/",
     relevance_score: 0.85,
-    passages: [
+    proposition_support: "Challenging",
+    authority_status: "Verified",
+    why_it_matters: "Provides a procedural challenge regarding enforcement: if the underlying contract is fatally defective (e.g., unstamped), the arbitration clause cannot be acted upon until cured.",
+    supporting_passages: [
       {
-        paragraph_id: "SC_ARB_002_p22",
+        paragraph_id: "22",
         text: "While the arbitration clause constitutes a separate agreement, if the underlying contract is unstamped, the arbitration clause cannot be acted upon until the defect is cured.",
         score: 0.89
       }
@@ -58,9 +64,12 @@ export const mockResearchResults = [
     date: "2021-01-11",
     source_url: "https://indiankanoon.org/doc/7654321/",
     relevance_score: 0.78,
-    passages: [
+    proposition_support: "Nuanced support",
+    authority_status: "Verified",
+    why_it_matters: "Reaffirms the doctrine of separability even in cases of underlying contractual defects, partially overruling earlier limitations.",
+    supporting_passages: [
       {
-        paragraph_id: "SC_ARB_003_p55",
+        paragraph_id: "55",
         text: "We overrule the decision in SMS Tea Estates to the extent it holds that an arbitration agreement in an unstamped document is non-existent in law.",
         score: 0.82
       }
