@@ -14,6 +14,7 @@ export const mockResearchResults = [
     date: "2011-07-20",
     source_url: "https://indiankanoon.org/doc/1718047/",
     relevance_score: 0.92,
+    type: "supporting",
     proposition_support: "Strong support",
     authority_status: "Verified",
     why_it_matters: "Directly addresses the separability of the arbitration agreement from the underlying contract, holding that termination does not ipso facto terminate the arbitration agreement.",
@@ -39,6 +40,7 @@ export const mockResearchResults = [
     date: "2019-04-10",
     source_url: "https://indiankanoon.org/doc/1234567/",
     relevance_score: 0.85,
+    type: "opposing",
     proposition_support: "Challenging",
     authority_status: "Verified",
     why_it_matters: "Provides a procedural challenge regarding enforcement: if the underlying contract is fatally defective (e.g., unstamped), the arbitration clause cannot be acted upon until cured.",
@@ -64,6 +66,7 @@ export const mockResearchResults = [
     date: "2021-01-11",
     source_url: "https://indiankanoon.org/doc/7654321/",
     relevance_score: 0.78,
+    type: "supporting",
     proposition_support: "Nuanced support",
     authority_status: "Verified",
     why_it_matters: "Reaffirms the doctrine of separability even in cases of underlying contractual defects, partially overruling earlier limitations.",
@@ -157,12 +160,12 @@ export const mockGraph = {
     { id: "SC_ARB_004", label: "Vidya Drolia", group: "Supreme Court", value: 20, url: "#" },
     { id: "SC_ARB_005", label: "Bharat Aluminium (BALCO)", group: "Supreme Court", value: 30, url: "#" },
   ],
-  links: [
-    { source: "SC_ARB_002", target: "SC_ARB_001", type: "distinguishes", value: 2 },
-    { source: "SC_ARB_003", target: "SC_ARB_001", type: "overrules", value: 3 },
-    { source: "SC_ARB_003", target: "SC_ARB_002", type: "cites", value: 1 },
-    { source: "SC_ARB_004", target: "SC_ARB_001", type: "cites", value: 1 },
-    { source: "SC_ARB_004", target: "SC_ARB_005", type: "follows", value: 2 },
+  edges: [
+    { source: "SC_ARB_002", target: "SC_ARB_001", relationship: "distinguishes", value: 2 },
+    { source: "SC_ARB_003", target: "SC_ARB_001", relationship: "overrules", value: 3 },
+    { source: "SC_ARB_003", target: "SC_ARB_002", relationship: "cites", value: 1 },
+    { source: "SC_ARB_004", target: "SC_ARB_001", relationship: "cites", value: 1 },
+    { source: "SC_ARB_004", target: "SC_ARB_005", relationship: "follows", value: 2 },
   ]
 };
 
